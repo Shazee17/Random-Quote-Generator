@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Roboto+Mono:ital,wght@0,100;0,300;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #b7b7b7;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.27'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 0 30px 0 30px
+}
+
+.quote-container{
+    width: auto;
+    max-width: 900%;
+    padding: 20px 30px; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.877);
+    box-shadow: rgba(61, 104, 121, 0.265) 0px 0px 0px 3px;  
+    z-index: 1;      
+}
+
+.quote-text{
+    font-size: 2.75rem;
+    font-family: 'Lexend', sans-serif;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.long-quote {
+    font-size: 2rem;
+}
+
+.quote-text:hover{
+    color: rgba(20, 96, 125, 0.873);
+}
+
+.fa-quote-left, .fa-quote-right{
+    font-size: 2rem;
+}
+
+.quote-author {
+    padding-top: 23px;
+    font-size: 1.4rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.buttons-container{
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.546);
+}
+
+button:active{
+    transform: translate(0, 0.3rem);
+    background: rgb(255, 255, 255);
+}
+
+.tweet-button:hover{
+    color: #38a1f3;
+}
+
+.new-quote:hover{
+    color:rgba(20, 96, 125, 0.873);
+}
+
+.creator-name{
+    position: absolute;
+    bottom: 0;
+    font-size: 0.5rem;
+    padding-bottom: 20px;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+.creator-name span{
+    font-size: 1rem;
+    color: rgba(27, 77, 99, 0.873);
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .quote-container{
+        margin: auto 10px;
+    }
+
+    .quote-text{
+        font-size: 2rem;
+    }
+
+    .quote-author{
+        font-size: 1rem;
+    }
+}
+
